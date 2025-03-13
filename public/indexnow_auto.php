@@ -2,8 +2,8 @@
 
 // --- CONFIG ---
 $sitemapUrl   = 'https://a359590.sitemaphosting7.com/4443587/sitemap_4443587.xml';
-$indexNowKey  = '42db6e88b74940d1a004556d454cffcf'; // Clé IndexNow
-$keyLocation  = 'https://www.2dolist.fr/42db6e88b74940d1a004556d454cffcf.txt';
+$indexNowKey  = 'da57fcb3046f4297b99ed0b843e41393'; // Clé IndexNow
+$keyLocation  = 'https://www.2dolist.fr/da57fcb3046f4297b99ed0b843e41393.txt';
 $lastCheckFile= __DIR__ . '/last_check.txt'; // Fichier pour stocker la dernière date de vérification
 
 // --- RÉCUPÈRE ET PARSE LE SITEMAP ---
