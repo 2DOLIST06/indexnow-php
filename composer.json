@@ -1,0 +1,7 @@
+{
+  "name": "indexnow-php",
+  "description": "IndexNow script on Render",
+  "require": {
+    "php": ">=7.4"
+  }
+}
