@@ -18,10 +18,10 @@ if (!$xml) {
 }
 
 // --- LIT LA DERNIÈRE DATE DE VÉRIFICATION ---
+$lastCheckDate = 0; // 0 => tout envoyer si aucune trace
 if (file_exists($lastCheckFile)) {
-    unlink($lastCheckFile);
+    $lastCheckDate = (int) file_get_contents($lastCheckFile);
 }
-$lastCheckDate = 0;
 $currentTimestamp = time(); // Date/heure actuelle pour mettre à jour après traitement
 
 // --- PRÉPARE LES URLS À ENVOYER (NOUVELLES/MODIFIÉES) ---
