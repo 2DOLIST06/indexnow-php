@@ -46,15 +46,12 @@ if (empty($urlList)) {
 }
 
 // --- AFFICHE LES URLS POUR LE LOG ---
-echo "URLs détectées pour IndexNow (TEST, ENVOI DÉSACTIVÉ) :\n";
+echo "URLs détectées pour IndexNow :\n";
 foreach ($urlList as $url) {
     echo " - $url\n";
 }
 
-/*
 // --- ENVOI À INDEXNOW (POST JSON) ---
-// (Commente cette section pour ne PAS envoyer réellement)
-
 $data = [
     'host'        => parse_url($urlList[0], PHP_URL_HOST), // Hôte de la 1ère URL
     'key'         => $indexNowKey,
@@ -76,4 +73,3 @@ echo "\nRéponse IndexNow : $response\n";
 
 // --- MET À JOUR LE FICHIER DE DERNIÈRE VÉRIFICATION ---
 file_put_contents($lastCheckFile, $currentTimestamp);
-*/
