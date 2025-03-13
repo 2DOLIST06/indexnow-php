@@ -19,10 +19,12 @@ if (!$xml) {
 
 // --- LIT LA DERNIÈRE DATE DE VÉRIFICATION ---
 $lastCheckDate = 0; // 0 => tout envoyer si aucune trace
+// Force à tout envoyer (on supprime last_check.txt s'il existe)
 if (file_exists($lastCheckFile)) {
-    $lastCheckDate = (int) file_get_contents($lastCheckFile);
+    unlink($lastCheckFile);
 }
-$currentTimestamp = time(); // Date/heure actuelle pour mettre à jour après traitement
+$lastCheckDate = 0; // Donc on enverra toutes les URLs
+ // Date/heure actuelle pour mettre à jour après traitement
 
 // --- PRÉPARE LES URLS À ENVOYER (NOUVELLES/MODIFIÉES) ---
 $urlList = [];
