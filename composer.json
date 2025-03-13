@@ -1,5 +1,5 @@
 {
-  "name": "indexnow-php",
+  "name": "2dolist06/indexnow-php",
   "require": {
     "php": ">=8.1"
   }
