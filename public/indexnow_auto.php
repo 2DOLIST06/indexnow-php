@@ -1,12 +1,17 @@
 <?php
 // FONCTIONNEMENT
-// https://www.2dolist.fr/indexnow_auto.php pour avir la liste
+// https://www.2dolist.fr/indexnow_auto.php pour avoir la liste
 // https://www.2dolist.fr/indexnow_auto.php?confirm=1 pour envoyer
+// Mettre nouvelle url en dur dans le code + pousser sur render avec un manual deploy
+
 // --- CONFIG ---
 $confirm = isset($_GET['confirm']) ? true : false; // Nouveau : détermine si on a confirmé l'envoi
-$sitemapUrl   = 'https://a359590.sitemaphosting7.com/4443587/sitemap_4443587.xml';
 $indexNowKey  = 'da57fcb3046f4297b99ed0b843e41393'; // Clé IndexNow
 $keyLocation  = 'https://www.2dolist.fr/da57fcb3046f4297b99ed0b843e41393.txt';
+
+// (Ci-dessous, tout le code relatif au sitemap est COMMENTÉ, pour le garder mais ne pas l'exécuter)
+/*
+$sitemapUrl   = 'https://a359590.sitemaphosting7.com/4443587/sitemap_4443587.xml';
 $lastCheckFile= __DIR__ . '/last_check.txt'; // Fichier pour stocker la dernière date de vérification
 
 // --- RÉCUPÈRE ET PARSE LE SITEMAP ---
@@ -47,6 +52,14 @@ if (empty($urlList)) {
     file_put_contents($lastCheckFile, $currentTimestamp);
     exit("Aucune nouvelle URL à indexer.\n");
 }
+*/
+
+// --- LISTE D’URLS À ENVOYER EN DUR ---
+$urlList = [
+    // Mets ici les URLs que tu veux envoyer manuellement
+    'https://www.2dolist.fr/activities/vol-en-montgolfiere-pres-de-bayonne',
+    'https://www.2dolist.fr/activities/vol-en-montgolfiere-pres-de-pau'
+];
 
 // --- AFFICHE LES URLS POUR LE LOG ---
 echo "URLs détectées (non encore envoyées) :\n";
@@ -54,9 +67,9 @@ foreach ($urlList as $url) {
     echo " - $url\n";
 }
 
-//Nouveau : si pas de confirmation, on s'arrête avant l'envoi
+// Nouveau : si pas de confirmation, on s'arrête avant l'envoi
 if (!$confirm) {
-    echo "\n(Aucun envoi effectué : ajoute ?confirm=1 à l'URL pour lancer l'envoi et mettre à jour last_check.)\n";
+    echo "\n(Aucun envoi effectué : ajoute ?confirm=1 à l'URL pour lancer l'envoi.)\n";
     exit;
 }
 
@@ -79,9 +92,5 @@ curl_close($ch);
 
 // --- AFFICHE LA RÉPONSE POUR CONTRÔLE ---
 echo "\nRéponse IndexNow : $response\n";
-
-// --- MET À JOUR LE FICHIER DE DERNIÈRE VÉRIFICATION ---
-file_put_contents($lastCheckFile, $currentTimestamp);
-echo "\nMise à jour de last_check.txt effectuée.\n";
 
 ?>
