@@ -1,6 +1,7 @@
 <?php
 
 // --- CONFIG ---
+$confirm = isset($_GET['confirm']) ? true : false; // Nouveau : détermine si on a confirmé l'envoi
 $sitemapUrl   = 'https://a359590.sitemaphosting7.com/4443587/sitemap_4443587.xml';
 $indexNowKey  = 'da57fcb3046f4297b99ed0b843e41393'; // Clé IndexNow
 $keyLocation  = 'https://www.2dolist.fr/da57fcb3046f4297b99ed0b843e41393.txt';
@@ -46,9 +47,15 @@ if (empty($urlList)) {
 }
 
 // --- AFFICHE LES URLS POUR LE LOG ---
-echo "URLs détectées pour IndexNow :\n";
+echo "URLs détectées (non encore envoyées) :\n";
 foreach ($urlList as $url) {
     echo " - $url\n";
+}
+
+//Nouveau : si pas de confirmation, on s'arrête avant l'envoi
+if (!$confirm) {
+    echo "\n(Aucun envoi effectué : ajoute ?confirm=1 à l'URL pour lancer l'envoi et mettre à jour last_check.)\n";
+    exit;
 }
 
 // --- ENVOI À INDEXNOW (POST JSON) ---
@@ -73,3 +80,6 @@ echo "\nRéponse IndexNow : $response\n";
 
 // --- MET À JOUR LE FICHIER DE DERNIÈRE VÉRIFICATION ---
 file_put_contents($lastCheckFile, $currentTimestamp);
+echo "\nMise à jour de last_check.txt effectuée.\n";
+
+?>
