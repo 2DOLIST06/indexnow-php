@@ -1,5 +1,7 @@
 <?php
-
+// FONCTIONNEMENT
+// https://www.2dolist.fr/indexnow_auto.php pour avir la liste
+// https://www.2dolist.fr/indexnow_auto.php?confirm=1 pour envoyer
 // --- CONFIG ---
 $confirm = isset($_GET['confirm']) ? true : false; // Nouveau : détermine si on a confirmé l'envoi
 $sitemapUrl   = 'https://a359590.sitemaphosting7.com/4443587/sitemap_4443587.xml';
