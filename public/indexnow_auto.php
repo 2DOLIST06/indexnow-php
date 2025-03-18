@@ -1,8 +1,9 @@
 <?php
 // FONCTIONNEMENT
-// https://www.2dolist.fr/indexnow_auto.php pour avoir la liste
-// https://www.2dolist.fr/indexnow_auto.php?confirm=1 pour envoyer
+// https://indexnow-php.onrender.com/indexnow_auto.php pour avoir la liste
+// https://indexnow-php.onrender.com/indexnow_auto.php?confirm=1 pour envoyer
 // Mettre nouvelle url en dur dans le code + pousser sur render avec un manual deploy
+// https://indexnow-php.onrender.com/indexnow_auto.php
 
 // --- CONFIG ---
 $confirm = isset($_GET['confirm']) ? true : false; // Nouveau : détermine si on a confirmé l'envoi
