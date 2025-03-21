@@ -58,8 +58,8 @@ if (empty($urlList)) {
 // --- LISTE D’URLS À ENVOYER EN DUR ---
 $urlList = [
     // Mets ici les URLs que tu veux envoyer manuellement
-    'https://www.2dolist.fr/activities/vol-en-montgolfiere-pres-de-bayonne',
-    'https://www.2dolist.fr/activities/vol-en-montgolfiere-pres-de-pau'
+    'https://www.2dolist.fr/activities/vol-privatif-gourmand-a-2-en-montgolfiere-au-dessus-des-chateaux-de-la-loire',
+    'https://www.2dolist.fr/categorie/montgolfiere '
 ];
 
 // --- AFFICHE LES URLS POUR LE LOG ---
