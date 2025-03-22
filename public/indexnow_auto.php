@@ -58,7 +58,8 @@ if (empty($urlList)) {
 // --- LISTE D’URLS À ENVOYER EN DUR ---
 $urlList = [
     // Mets ici les URLs que tu veux envoyer manuellement
-    'https://www.2dolist.fr/activities/saut-en-parachute-tandem-pres-de-tours',
+    'https://www.2dolist.fr/categorie/parapente',
+    'https://www.2dolist.fr/categorie/parachute',
 ];
 
 // --- AFFICHE LES URLS POUR LE LOG ---
