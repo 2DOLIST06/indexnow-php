@@ -58,7 +58,7 @@ if (empty($urlList)) {
 // --- LISTE D’URLS À ENVOYER EN DUR ---
 $urlList = [
     // Mets ici les URLs que tu veux envoyer manuellement
-    'https://www.2dolist.fr/categorie/helicoptere',
+    'https://www.2dolist.fr/categorie/ulm',
 ];
 
 // --- AFFICHE LES URLS POUR LE LOG ---
