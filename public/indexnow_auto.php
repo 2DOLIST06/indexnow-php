@@ -58,20 +58,7 @@ if (empty($urlList)) {
 // --- LISTE D’URLS À ENVOYER EN DUR ---
 $urlList = [
     // Mets ici les URLs que tu veux envoyer manuellement
-    'https://www.2dolist.fr/categorie/montgolfiere',
-    'https://www.2dolist.fr/categorie/helicoptere/subcategorie/pilotage-helicoptere',
-    'https://www.2dolist.fr/categorie/avion/subcategorie/bapteme-voltige-avion',
-    'https://www.2dolist.fr/categorie/avion/subcategorie/bapteme-en-avion',
-    'https://www.2dolist.fr/categorie/ulm/subcategorie/pilotage-ulm-pendulaire',
-    'https://www.2dolist.fr/categorie/parachute/subcategorie/saut-en-parachute',
-    'https://www.2dolist.fr/region/pays-de-la-loire/categorie/ulm',
-    'https://www.2dolist.fr/categorie/montgolfiere/subcategorie/vol-en-montgolfiere',
-    'https://www.2dolist.fr/categorie/ulm/subcategorie/pilotage-paramoteur',
-    'https://www.2dolist.fr/categorie/planeur/subcategorie/bapteme-planeur',
-    'https://www.2dolist.fr/categorie/ulm/subcategorie/pilotage-autogire',
-    'https://www.2dolist.fr/categorie/ulm/subcategorie/pilotage-ulm-3-axes',
-    'https://www.2dolist.fr/categorie/ulm/subcategorie/bapteme-ulm-3-axes',
-    'https://www.2dolist.fr/region/hauts-de-france/categorie/ulm',
+    'https://www.2dolist.fr/activities/saut-en-parachute-tandem-a-biarritz',
 
 ];
 
