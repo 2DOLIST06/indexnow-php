@@ -58,7 +58,10 @@ if (empty($urlList)) {
 // --- LISTE D’URLS À ENVOYER EN DUR ---
 $urlList = [
     // Mets ici les URLs que tu veux envoyer manuellement
-    'https://www.2dolist.fr/cadeaux',
+    'https://www.2dolist.fr/region/pays-de-la-loire/categorie/helicoptere/subcategorie/pilotage-helicoptere',
+    'https://www.2dolist.fr/region/centre-val-de-loire/departement/indre-et-loire/categorie/parachute',
+    'https://www.2dolist.fr/region/pays-de-la-loire/departement/vendee/categorie/helicoptere/subcategorie/pilotage-helicoptere',
+    'https://www.2dolist.fr/region/occitanie/departement/pyrenees-orientales/categorie/parachute',
 
 ];
 
