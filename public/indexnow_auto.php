@@ -58,12 +58,9 @@ if (empty($urlList)) {
 // --- LISTE D’URLS À ENVOYER EN DUR ---
 $urlList = [
     // Mets ici les URLs que tu veux envoyer manuellement
-    'https://www.2dolist.fr/region/nouvelle-aquitaine/departement/pyrenees-atlantiques/categorie/montgolfiere',  
-    'https://www.2dolist.fr/region/pays-de-la-loire/categorie/helicoptere',   
-    'https://www.2dolist.fr/region/nouvelle-aquitaine/departement/pyrenees-atlantiques/categorie/montgolfiere/subcategorie/vol-en-montgolfiere',   
-    'https://www.2dolist.fr/region/centre-val-de-loire/departement/indre-et-loire/categorie/parachute/subcategorie/saut-en-parachute',   
-    'https://www.2dolist.fr/region/centre-val-de-loire/categorie/parachute/subcategorie/saut-en-parachute',   
-    'https://www.2dolist.fr/region/occitanie/departement/pyrenees-orientales/categorie/parachute/subcategorie/saut-en-parachute', 
+    'https://www.2dolist.fr/plan-du-site',  
+    'https://www.2dolist.fr/region/nouvelle-aquitaine/departement/landes/categorie/parachute',   
+    'https://www.2dolist.fr/region/nouvelle-aquitaine/departement/landes/categorie/parachute/subcategorie/saut-en-parachute',   
 
 ];
 
