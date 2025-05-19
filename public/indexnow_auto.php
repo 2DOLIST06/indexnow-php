@@ -58,9 +58,12 @@ if (empty($urlList)) {
 // --- LISTE D’URLS À ENVOYER EN DUR ---
 $urlList = [
     // Mets ici les URLs que tu veux envoyer manuellement
-    'https://www.2dolist.fr/plan-du-site',  
-    'https://www.2dolist.fr/region/nouvelle-aquitaine/departement/landes/categorie/parachute',   
-    'https://www.2dolist.fr/region/nouvelle-aquitaine/departement/landes/categorie/parachute/subcategorie/saut-en-parachute',   
+    'https://www.2dolist.fr/activities/bapteme-de-lair-en-avion-pres-de-saint-etienne',  
+    'https://www.2dolist.fr/activities/bapteme-de-lair-en-avion-a-lyon',   
+    'https://www.2dolist.fr/activities/vol-dinitiation-au-pilotage-en-avion-a-lyon',   
+    'https://www.2dolist.fr/activities/vol-dinitiation-au-pilotage-davion-pres-de-saint-etienne', 
+    'https://www.2dolist.fr/activities/bapteme-de-lair-en-autogire-entre-grenoble-et-chambery', 
+    'https://www.2dolist.fr/activities/bapteme-en-ulm-pendulaire-entre-grenoble-et-chambery', 
 
 ];
 
