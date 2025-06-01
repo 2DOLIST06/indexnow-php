@@ -58,8 +58,10 @@ if (empty($urlList)) {
 // --- LISTE D’URLS À ENVOYER EN DUR ---
 $urlList = [
     // Mets ici les URLs que tu veux envoyer manuellement
-    'https://www.2dolist.fr/activities/saut-en-parachute-tandem-pres-de-tours',  
-    'https://www.2dolist.fr/region/ile-de-france/categorie/montgolfiere',   
+    'https://www.2dolist.fr/region/auvergne-rhone-alpes/departement/isere/categorie/avion',
+    'https://www.2dolist.fr/region/bourgogne-franche-comte/departement/jura/categorie/avion',
+    'https://www.2dolist.fr/region/centre-val-de-loire/categorie/avion',
+    'https://www.2dolist.fr/region/centre-val-de-loire/departement/indre-et-loire/categorie/avion',
 
 ];
 
