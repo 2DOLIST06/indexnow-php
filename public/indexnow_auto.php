@@ -62,8 +62,19 @@ $urlList = [
     'https://www.2dolist.fr/region/bourgogne-franche-comte/departement/jura/categorie/avion',
     'https://www.2dolist.fr/region/centre-val-de-loire/categorie/avion',
     'https://www.2dolist.fr/region/centre-val-de-loire/departement/indre-et-loire/categorie/avion',
-
-];
+    'https://www.2dolist.fr/region/hauts-de-france/departement/pas-de-calais/categorie/avion', 
+     'https://www.2dolist.fr/region/nouvelle-aquitaine/departement/dordogne/categorie/avion',
+     'https://www.2dolist.fr/region/nouvelle-aquitaine/departement/vienne/categorie/avion',
+     'https://www.2dolist.fr/region/nouvelle-aquitaine/departement/charente-maritime/categorie/avion',
+     'https://www.2dolist.fr/region/occitanie/categorie/avion',
+     'https://www.2dolist.fr/region/occitanie/departement/lot/categorie/avion',
+     'https://www.2dolist.fr/region/occitanie/departement/herault/categorie/avion',
+     'https://www.2dolist.fr/region/occitanie/departement/tarn-et-garonne/categorie/avion',
+    'https://www.2dolist.fr/region/pays-de-la-loire/departement/loire-atlantique/categorie/avion',
+     'https://www.2dolist.fr/region/provence-alpes-cote-dazur/departement/alpes-de-haute-provence/categorie/avion',	
+     'https://www.2dolist.fr/region/provence-alpes-cote-dazur/departement/hautes-alpes/categorie/avion',
+    
+    ];
 
 // --- AFFICHE LES URLS POUR LE LOG ---
 echo "URLs détectées (non encore envoyées) :\n";
