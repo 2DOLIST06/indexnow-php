@@ -58,21 +58,8 @@ if (empty($urlList)) {
 // --- LISTE D’URLS À ENVOYER EN DUR ---
 $urlList = [
     // Mets ici les URLs que tu veux envoyer manuellement
-    'https://www.2dolist.fr/region/auvergne-rhone-alpes/departement/isere/categorie/avion',
-    'https://www.2dolist.fr/region/bourgogne-franche-comte/departement/jura/categorie/avion',
-    'https://www.2dolist.fr/region/centre-val-de-loire/categorie/avion',
-    'https://www.2dolist.fr/region/centre-val-de-loire/departement/indre-et-loire/categorie/avion',
-    'https://www.2dolist.fr/region/hauts-de-france/departement/pas-de-calais/categorie/avion', 
-     'https://www.2dolist.fr/region/nouvelle-aquitaine/departement/dordogne/categorie/avion',
-     'https://www.2dolist.fr/region/nouvelle-aquitaine/departement/vienne/categorie/avion',
-     'https://www.2dolist.fr/region/nouvelle-aquitaine/departement/charente-maritime/categorie/avion',
-     'https://www.2dolist.fr/region/occitanie/categorie/avion',
-     'https://www.2dolist.fr/region/occitanie/departement/lot/categorie/avion',
-     'https://www.2dolist.fr/region/occitanie/departement/herault/categorie/avion',
-     'https://www.2dolist.fr/region/occitanie/departement/tarn-et-garonne/categorie/avion',
-    'https://www.2dolist.fr/region/pays-de-la-loire/departement/loire-atlantique/categorie/avion',
-     'https://www.2dolist.fr/region/provence-alpes-cote-dazur/departement/alpes-de-haute-provence/categorie/avion',	
-     'https://www.2dolist.fr/region/provence-alpes-cote-dazur/departement/hautes-alpes/categorie/avion',
+    'https://www.2dolist.fr/activities/vol-en-ulm-au-dessus-du-mont-st-michel',
+    'https://www.2dolist.fr/activities/vol-dinitiation-au-pilotage-de-planeur-au-nord-de-paris',
     
     ];
 
