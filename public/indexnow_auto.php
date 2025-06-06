@@ -58,8 +58,7 @@ if (empty($urlList)) {
 // --- LISTE D’URLS À ENVOYER EN DUR ---
 $urlList = [
     // Mets ici les URLs que tu veux envoyer manuellement
-    'https://www.2dolist.fr/activities/vol-en-ulm-au-dessus-du-mont-st-michel',
-    'https://www.2dolist.fr/activities/vol-dinitiation-au-pilotage-de-planeur-au-nord-de-paris',
+    'https://www.2dolist.fr/activities/bapteme-en-parapente-dans-les-pyrenees',
     
     ];
 
