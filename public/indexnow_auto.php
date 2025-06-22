@@ -58,9 +58,9 @@ if (empty($urlList)) {
 // --- LISTE D’URLS À ENVOYER EN DUR ---
 $urlList = [
     // Mets ici les URLs que tu veux envoyer manuellement
-    'https://www.2dolist.fr/activities/vol-en-helicoptere-au-depart-dalbertville',
-    'https://www.2dolist.fr/activities/vol-en-helicoptere-au-depart-des-saisies',
-    'https://www.2dolist.fr/activities/vol-en-parapente-aux-saisies',
+    'https://www.2dolist.fr/region/auvergne-rhone-alpes/departement/savoie/categorie/parapente/subcategorie/bapteme-parapente',
+    'https://www.2dolist.fr/region/auvergne-rhone-alpes/departement/savoie/categorie/parapente',
+  
     
     ];
 
