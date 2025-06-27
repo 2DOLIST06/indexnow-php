@@ -58,10 +58,8 @@ if (empty($urlList)) {
 // --- LISTE D’URLS À ENVOYER EN DUR ---
 $urlList = [
     // Mets ici les URLs que tu veux envoyer manuellement
-    'https://www.2dolist.fr/region/auvergne-rhone-alpes/departement/savoie/categorie/parapente/subcategorie/bapteme-parapente',
-    'https://www.2dolist.fr/region/auvergne-rhone-alpes/departement/savoie/categorie/parapente',
-  
-    
+    'https://www.2dolist.fr/activities/bapteme-en-ulm-autogire-autour-de-propriano-en-corse',
+     
     ];
 
 // --- AFFICHE LES URLS POUR LE LOG ---
