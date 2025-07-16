@@ -58,7 +58,7 @@ if (empty($urlList)) {
 // --- LISTE D’URLS À ENVOYER EN DUR ---
 $urlList = [
     // Mets ici les URLs que tu veux envoyer manuellement
-    'https://www.2dolist.fr/activities/bapteme-en-ulm-autogire-autour-de-propriano-en-corse',
+    'https://www.2dolist.fr/activities/seance-decouverte-en-parapente-au-sud-de-paris',
      
     ];
 
