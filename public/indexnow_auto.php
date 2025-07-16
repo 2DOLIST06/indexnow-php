@@ -58,7 +58,10 @@ if (empty($urlList)) {
 // --- LISTE D’URLS À ENVOYER EN DUR ---
 $urlList = [
     // Mets ici les URLs que tu veux envoyer manuellement
-    'https://www.2dolist.fr/activities/seance-decouverte-en-parapente-au-sud-de-paris',
+    'https://www.2dolist.fr/region/ile-de-france/departement/seine-et-marne/categorie/parapente',
+    'https://www.2dolist.fr/region/ile-de-france/departement/seine-et-marne/categorie/parapente/subcategorie/bapteme-parapente',
+    'https://www.2dolist.fr/region/ile-de-france/categorie/parapente/subcategorie/bapteme-parapente',
+    'https://www.2dolist.fr/region/ile-de-france/categorie/parapente',
      
     ];
 
