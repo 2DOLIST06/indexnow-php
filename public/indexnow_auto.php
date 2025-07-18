@@ -58,10 +58,20 @@ if (empty($urlList)) {
 // --- LISTE D’URLS À ENVOYER EN DUR ---
 $urlList = [
     // Mets ici les URLs que tu veux envoyer manuellement
-    'https://www.2dolist.fr/region/ile-de-france/departement/seine-et-marne/categorie/parapente',
-    'https://www.2dolist.fr/region/ile-de-france/departement/seine-et-marne/categorie/parapente/subcategorie/bapteme-parapente',
-    'https://www.2dolist.fr/region/ile-de-france/categorie/parapente/subcategorie/bapteme-parapente',
-    'https://www.2dolist.fr/region/ile-de-france/categorie/parapente',
+    'https://www.2dolist.fr/activities/bapteme-de-lair-en-avion-au-depart-de-cannes',
+    'https://www.2dolist.fr/activities/saut-en-parachute-tandem-pres-de-cannes',
+    'https://www.2dolist.fr/region/provence-alpes-cote-dazur/categorie/avion/subcategorie/bapteme-en-avion',
+    'https://www.2dolist.fr/region/occitanie/departement/herault/categorie/parachute',
+    'https://www.2dolist.fr/region/provence-alpes-cote-dazur/departement/var/categorie/parachute',
+    'https://www.2dolist.fr/region/provence-alpes-cote-dazur/departement/var/categorie/parachute/subcategorie/saut-en-parachute',
+    'https://www.2dolist.fr/region/occitanie/departement/herault/categorie/parachute/subcategorie/chute-libre-indoor',
+    'https://www.2dolist.fr/region/provence-alpes-cote-dazur/departement/alpes-maritimes/categorie/helicoptere',
+    'https://www.2dolist.fr/region/provence-alpes-cote-dazur/departement/alpes-maritimes/categorie/helicoptere/subcategorie/bapteme-en-helicoptere',
+    'https://www.2dolist.fr/region/provence-alpes-cote-dazur/departement/alpes-maritimes/categorie/avion',
+    'https://www.2dolist.fr/region/provence-alpes-cote-dazur/departement/alpes-maritimes/categorie/avion/subcategorie/bapteme-en-avion',
+    'https://www.2dolist.fr/region/provence-alpes-cote-dazur/departement/var',
+    'https://www.2dolist.fr/region/provence-alpes-cote-dazur/departement/alpes-maritimes',
+
      
     ];
 
