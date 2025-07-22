@@ -58,20 +58,10 @@ if (empty($urlList)) {
 // --- LISTE D’URLS À ENVOYER EN DUR ---
 $urlList = [
     // Mets ici les URLs que tu veux envoyer manuellement
-    'https://www.2dolist.fr/activities/bapteme-dhelicoptere-en-corse-survol-de-bonifacio',
-    'https://www.2dolist.fr/activities/survol-des-volcans-dauvergne-en-helicoptere',
-    'https://www.2dolist.fr/activities/survol-de-paris-en-helicoptere-voie-royale',
-    'https://www.2dolist.fr/activities/bapteme-en-helicoptere-au-depart-de-quimper',
-    'https://www.2dolist.fr/activities/bapteme-en-helicoptere-au-depart-de-carcassonne',
-    'https://www.2dolist.fr/activities/vol-en-montgolfiere-au-nord-daix-en-provence',
-    'https://www.2dolist.fr/activities/vol-en-montgolfiere-au-sud-pres-depinal',
-    'https://www.2dolist.fr/activities/vol-en-montgolfiere-pres-de-rennes-en-bretagne',
-    'https://www.2dolist.fr/activities/saut-en-parachute-tandem-pres-de-troyes',
-    'https://www.2dolist.fr/activities/saut-en-parachute-tandem-a-vannes',
-    'https://www.2dolist.fr/activities/saut-en-parachute-a-clermont-ferrand',
-    'https://www.2dolist.fr/activities/bapteme-de-parapente-sur-les-hauteurs-de-cannes',
-    'https://www.2dolist.fr/activities/bapteme-en-parapente-au-dessus-du-viaduc-de-millau',
-    'https://www.2dolist.fr/activities/bapteme-en-parapente-au-lac-de-sainte-croix',
+    'https://www.2dolist.fr/activities/vol-en-montgolfiere-pres-de-poitiers',
+    'https://www.2dolist.fr/activities/vol-en-montgolfiere-en-touraine-pres-dangers',
+    'https://www.2dolist.fr/activities/vol-en-montgolfiere-au-dessus-du-marais-poitevin',
+    'https://www.2dolist.fr/activities/vol-en-montgolfiere-a-saumur-survol-des-chateaux-de-la-loire',
 
 
      
