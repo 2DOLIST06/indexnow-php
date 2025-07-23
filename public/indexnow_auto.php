@@ -58,7 +58,22 @@ if (empty($urlList)) {
 // --- LISTE D’URLS À ENVOYER EN DUR ---
 $urlList = [
     // Mets ici les URLs que tu veux envoyer manuellement
-    'https://www.2dolist.fr/activities/saut-en-parachute-tandem-pres-de-narbonne',
+    'https://www.2dolist.fr/activities/survol-du-mont-blanc-en-helicoptere',
+    'https://www.2dolist.fr/activities/vol-en-helicoptere-a-amboise-survol-des-chateaux-de-la-loire',
+    'https://www.2dolist.fr/activities/saut-en-parachute-dhelicoptere-au-massif-du-mont-blanc',
+    'https://www.2dolist.fr/activities/vol-en-parapente-face-au-mont-blanc',
+    'https://www.2dolist.fr/activities/bapteme-en-parapente-au-dessus-du-lac-de-serre-poncon',
+    'https://www.2dolist.fr/region/centre-val-de-loire/categorie/helicoptere/subcategorie/bapteme-en-helicoptere',
+    'https://www.2dolist.fr/region/auvergne-rhone-alpes/departement/haute-savoie/categorie/parachute',
+    'https://www.2dolist.fr/region/auvergne-rhone-alpes/departement/haute-savoie/categorie/parachute/subcategorie/saut-en-parachute',
+    'https://www.2dolist.fr/region/provence-alpes-cote-dazur/departement/hautes-alpes/categorie/parapente',
+    'https://www.2dolist.fr/region/provence-alpes-cote-dazur/departement/hautes-alpes/categorie/parapente/subcategorie/bapteme-parapente',
+    'https://www.2dolist.fr/region/auvergne-rhone-alpes/departement/haute-savoie/categorie/helicoptere',
+    'https://www.2dolist.fr/region/centre-val-de-loire/categorie/helicoptere',
+    'https://www.2dolist.fr/region/centre-val-de-loire/departement/indre-et-loire/categorie/helicoptere',
+    'https://www.2dolist.fr/region/auvergne-rhone-alpes/departement/haute-savoie/categorie/helicoptere/subcategorie/bapteme-en-helicoptere',
+    'https://www.2dolist.fr/region/centre-val-de-loire/departement/indre-et-loire/categorie/helicoptere/subcategorie/bapteme-en-helicoptere',
+
     
      
     ];
