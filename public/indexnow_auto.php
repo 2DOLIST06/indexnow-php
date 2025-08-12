@@ -58,10 +58,10 @@ if (empty($urlList)) {
 // --- LISTE D’URLS À ENVOYER EN DUR ---
 $urlList = [
     // Mets ici les URLs que tu veux envoyer manuellement
-    'https://www.2dolist.fr/activities/saut-en-parachute-a-niort',
-    'https://www.2dolist.fr/activities/vol-en-parapente-dans-les-vosges',
-    'https://www.2dolist.fr/activities/saut-en-parachute-au-mont-st-michel',
-    'https://www.2dolist.fr/activities/saut-en-parachute-en-montelimar',
+    'https://www.2dolist.fr/activities/saut-en-parachute-au-castellet-dans-le-var',
+    'https://www.2dolist.fr/activities/vol-en-montgolfiere-pres-darras-dans-le-pas-de-calais',
+    'https://www.2dolist.fr/activities/survol-du-vexin-en-montgolfiere-a-gisors',
+    'https://www.2dolist.fr/activities/vol-en-montgolfiere-dans-le-perigord',
 
     
      
