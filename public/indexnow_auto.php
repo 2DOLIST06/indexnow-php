@@ -58,8 +58,10 @@ if (empty($urlList)) {
 // --- LISTE D’URLS À ENVOYER EN DUR ---
 $urlList = [
     // Mets ici les URLs que tu veux envoyer manuellement
-    'https://www.2dolist.fr/activities/vol-en-parapente-pres-de-montpellier',
-    'https://www.2dolist.fr/activities/bapteme-en-parapente-pres-de-font-romeu-dans-les-pyrenees',
+    'https://www.2dolist.fr/activities/bapteme-en-avion-pres-de-nancy',
+    'https://www.2dolist.fr/activities/vol-en-ulm-multiaxes-pres-de-pau',
+    'https://www.2dolist.fr/activities/vol-en-ulm-3-axes-a-bourges',
+    'https://www.2dolist.fr/activities/bapteme-en-paramoteur-en-baie-de-quiberon',
  
     ];
 
