@@ -59,6 +59,7 @@ if (empty($urlList)) {
 $urlList = [
     // Mets ici les URLs que tu veux envoyer manuellement
     'https://www.2dolist.fr/activities/bapteme-en-helicoptere-pres-de-brive-la-gallarde',
+    'https://www.2dolist.fr/activities/vol-en-parapente-motorise-pres-de-biarritz',
 
     ];
 
