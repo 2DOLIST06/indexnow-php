@@ -58,11 +58,8 @@ if (empty($urlList)) {
 // --- LISTE D’URLS À ENVOYER EN DUR ---
 $urlList = [
     // Mets ici les URLs que tu veux envoyer manuellement
-    'https://www.2dolist.fr/activities/bapteme-en-avion-pres-de-nancy',
-    'https://www.2dolist.fr/activities/vol-en-ulm-multiaxes-pres-de-pau',
-    'https://www.2dolist.fr/activities/vol-en-ulm-3-axes-a-bourges',
-    'https://www.2dolist.fr/activities/bapteme-en-paramoteur-en-baie-de-quiberon',
- 
+    'https://www.2dolist.fr/activities/bapteme-en-paramoteur-pres-de-tours',
+
     ];
 
 // --- AFFICHE LES URLS POUR LE LOG ---
