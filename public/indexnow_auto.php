@@ -58,13 +58,11 @@ if (empty($urlList)) {
 // --- LISTE D’URLS À ENVOYER EN DUR ---
 $urlList = [
     // Mets ici les URLs que tu veux envoyer manuellement
-    'https://www.2dolist.fr/activities/bapteme-en-montgolfiere-pres-de-dijon',
-    'https://www.2dolist.fr/activities/vol-en-helicoptere-a-nimes',
-    'https://www.2dolist.fr/activities/bapteme-en-helicoptere-au-mont-saint-michel',
-    'https://www.2dolist.fr/activities/vol-en-ulm-3-axes-a-corte-en-corse',
-    'https://www.2dolist.fr/activities/vol-dinitiation-au-pilotage-dulm-3axes-pres-du-mans',
-    'https://www.2dolist.fr/activities/bapteme-en-helicoptere-en-baie-de-somme',
-    'https://www.2dolist.fr/activities/bapteme-en-helicoptere-a-saint-etienne',
+    'https://www.2dolist.fr/activities/simulateur-de-chute-libre-a-paris',
+    'https://www.2dolist.fr/activities/vol-en-paramoteur-pres-de-la-rochelle',
+    'https://www.2dolist.fr/activities/saut-en-parachute-a-lons-le-saunier',
+    'https://www.2dolist.fr/activities/bapteme-en-helicoptere-pres-de-vannes',
+    
 
     ];
 
