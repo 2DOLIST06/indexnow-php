@@ -8,7 +8,17 @@
 // --- CONFIG ---
 $confirm = isset($_GET['confirm']) ? true : false; // Nouveau : détermine si on a confirmé l'envoi
 $indexNowKey  = 'da57fcb3046f4297b99ed0b843e41393'; // Clé IndexNow
+
 $keyLocation  = 'https://www.2dolist.fr/da57fcb3046f4297b99ed0b843e41393.txt';
+// Inclure les pages statiques à la demande (?include_static=1)
+$includeStatic = isset($_GET['include_static']);
+$staticPages = [
+  'https://www.2dolist.fr/',
+  'https://www.2dolist.fr/cadeaux',
+  'https://www.2dolist.fr/plan-du-site',
+  'https://www.2dolist.fr/jet-prive',
+  'https://www.2dolist.fr/faq',
+];
 
 // Lecture du sitemap et suivi des envois
 $sitemapUrl   = 'https://www.2dolist.fr/sitemap-test.xml';
@@ -50,6 +60,14 @@ foreach ($xml->url as $urlEntry) {
     if ($entryTimestamp > $lastCheckDate) {
         $urlList[] = $loc;
     }
+}
+
+// Exclure par défaut; inclure si ?include_static=1
+if (!$includeStatic) {
+    $urlList = array_values(array_filter(
+        $urlList,
+        static fn($u) => !in_array($u, $staticPages, true)
+    ));
 }
 
 // Si aucune URL à envoyer, on met à jour la date et on sort
