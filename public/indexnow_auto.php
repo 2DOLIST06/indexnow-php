@@ -57,7 +57,7 @@ if (empty($urlList)) {
     file_put_contents($lastCheckFile, $currentTimestamp);
     exit("Aucune nouvelle URL à indexer.\n");
 }
-*/
+
 
 
 // --- AFFICHE LES URLS POUR LE LOG ---
