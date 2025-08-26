@@ -10,9 +10,8 @@ $confirm = isset($_GET['confirm']) ? true : false; // Nouveau : détermine si on
 $indexNowKey  = 'da57fcb3046f4297b99ed0b843e41393'; // Clé IndexNow
 $keyLocation  = 'https://www.2dolist.fr/da57fcb3046f4297b99ed0b843e41393.txt';
 
-// (Ci-dessous, tout le code relatif au sitemap est COMMENTÉ, pour le garder mais ne pas l'exécuter)
-/*
-$sitemapUrl   = 'https://a359590.sitemaphosting7.com/4443587/sitemap_4443587.xml';
+// Lecture du sitemap et suivi des envois
+$sitemapUrl   = 'https://www.2dolist.fr/sitemap-test.xml';
 $lastCheckFile= __DIR__ . '/last_check.txt'; // Fichier pour stocker la dernière date de vérification
 
 // --- RÉCUPÈRE ET PARSE LE SITEMAP ---
@@ -31,7 +30,9 @@ $lastCheckDate = 0; // 0 => tout envoyer si aucune trace
 if (file_exists($lastCheckFile)) {
     $lastCheckDate = (int) file_get_contents($lastCheckFile);
 }
-$currentTimestamp = time(); // Date/heure actuelle pour mettre à jour après traitement
+$currentTimestamp = time(); // Date/heure actuelle pour mise à jour après envoi
+// Suivi du max <lastmod> vu pour mise à jour conditionnelle
+$maxEntryTimestamp = 0;
 
 // --- PRÉPARE LES URLS À ENVOYER (NOUVELLES/MODIFIÉES) ---
 $urlList = [];
@@ -41,6 +42,9 @@ foreach ($xml->url as $urlEntry) {
     
     // Convertir la date du sitemap en timestamp
     $entryTimestamp = strtotime($lastmod);
+    if ($entryTimestamp > $maxEntryTimestamp) {
+        $maxEntryTimestamp = $entryTimestamp;
+    }
     
     // Si la date de modif est > $lastCheckDate => URL considérée comme nouvelle/modifiée
     if ($entryTimestamp > $lastCheckDate) {
@@ -55,14 +59,6 @@ if (empty($urlList)) {
 }
 */
 
-// --- LISTE D’URLS À ENVOYER EN DUR ---
-$urlList = [
-    // Mets ici les URLs que tu veux envoyer manuellement
-    'https://www.2dolist.fr/activities/vol-privee-en-montgolfiere-pres-de-chateauroux',
-    'https://www.2dolist.fr/activities/vol-en-ulm-3-axes-en-corse-pres-de-bastia',
-    'https://www.2dolist.fr/activities/ballon-generali-au-dessus-de-paris',
- 
-    ];
 
 // --- AFFICHE LES URLS POUR LE LOG ---
 echo "URLs détectées (non encore envoyées) :\n";
@@ -91,9 +87,17 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
 $response = curl_exec($ch);
+$httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 curl_close($ch);
 
 // --- AFFICHE LA RÉPONSE POUR CONTRÔLE ---
 echo "\nRéponse IndexNow : $response\n";
+
+// --- Mise à jour du last_check uniquement si envoi confirmé et succès HTTP ---
+if ($confirm && in_array($httpCode, [200, 202])) {
+    $newCheckpoint = $maxEntryTimestamp > 0 ? $maxEntryTimestamp : $currentTimestamp;
+    file_put_contents($lastCheckFile, $newCheckpoint);
+    echo "\n(last_check.txt mis à jour à $newCheckpoint)\n";
+}
 
 ?>
