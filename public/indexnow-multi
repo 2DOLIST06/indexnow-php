@@ -1,10 +1,11 @@
 <?php
 // FONCTIONNEMENT
-// /indexnow_auto.php?site=fr            -> lister les URLs détectées
-// /indexnow_auto.php?site=fr&confirm=1  -> envoyer à IndexNow
-// /indexnow_auto.php?site=com           -> lister pour .com
-// /indexnow_auto.php?site=com&confirm=1 -> envoyer pour .com
+// /indexnow_multi.php?site=fr            -> lister les URLs détectées (.fr)
+// /indexnow_multi.php?site=fr&confirm=1  -> envoyer à IndexNow (.fr)
+// /indexnow_multi.php?site=com           -> lister les URLs détectées (.com)
+// /indexnow_multi.php?site=com&confirm=1 -> envoyer à IndexNow (.com)
 // Option : &include_static=1 pour inclure les pages statiques
+// Option : &help=1 pour afficher l’aide
 
 // --- CONFIG SITES ---
 $sites = [
