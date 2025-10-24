@@ -1,11 +1,11 @@
 <?php
 // FONCTIONNEMENT
-// /indexnow_multi.php?site=fr            -> lister les URLs détectées (.fr)
-// /indexnow_multi.php?site=fr&confirm=1  -> envoyer à IndexNow (.fr)
-// /indexnow_multi.php?site=com           -> lister les URLs détectées (.com)
-// /indexnow_multi.php?site=com&confirm=1 -> envoyer à IndexNow (.com)
+// /indexnow-multi.php?site=fr            -> lister les URLs détectées (.fr)
+// /indexnow-multi.php?site=fr&confirm=1  -> envoyer à IndexNow (.fr)
+// /indexnow-multi.php?site=com           -> lister les URLs détectées (.com)
+// /indexnow-multi.php?site=com&confirm=1 -> envoyer à IndexNow (.com)
 // Option : &include_static=1 pour inclure les pages statiques
-// Option : &help=1 pour afficher l’aide
+// Option : &help=1 pour afficher cette aide
 
 // --- CONFIG SITES ---
 $sites = [
@@ -113,7 +113,7 @@ foreach ($urlList as $url) {
 
 // Sans confirmation, on s'arrête ici
 if (!$confirm) {
-  echo "\n(Aucun envoi effectué : ajoute ?confirm=1 à l'URL pour lancer l'envoi.)\n";
+  echo "\n(Aucun envoi effectué : ajoute &confirm=1 à l'URL pour lancer l'envoi.)\n";
   exit;
 }
 
