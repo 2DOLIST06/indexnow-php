@@ -27,6 +27,7 @@ $sites = [
     'sitemapUrl'  => 'https://www.2dolistgo.com/sitemap.xml',
     'staticPages' => [
       'https://www.2dolistgo.com/',
+      'https://www.2dolistgo.com/gift',
       'https://www.2dolistgo.com/sitemap',
       'https://www.2dolistgo.com/private-jet',
     ],
