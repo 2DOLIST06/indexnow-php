@@ -1,11 +1,36 @@
 <?php
-// FONCTIONNEMENT
-// /indexnow-multi.php?site=fr            -> lister les URLs détectées (.fr)
-// /indexnow-multi.php?site=fr&confirm=1  -> envoyer à IndexNow (.fr)
-// /indexnow-multi.php?site=com           -> lister les URLs détectées (.com)
-// /indexnow-multi.php?site=com&confirm=1 -> envoyer à IndexNow (.com)
-// Option : &include_static=1 pour inclure les pages statiques
-// Option : &help=1 pour afficher cette aide
+if (isset($_GET['help'])) {
+  echo <<<HELP
+───────────────────────────────
+ FONCTIONNEMENT DU SCRIPT INDEXNOW
+───────────────────────────────
+
+UTILISATION NORMALE
+  ▸ /indexnow-multi.php?site=fr
+       → Liste les URLs modifiées (.fr)
+  ▸ /indexnow-multi.php?site=fr&confirm=1
+       → Envoie réellement à IndexNow (.fr)
+  ▸ /indexnow-multi.php?site=com
+       → Liste les URLs modifiées (.com)
+  ▸ /indexnow-multi.php?site=com&confirm=1
+       → Envoie réellement à IndexNow (.com)
+
+OPTIONS SUPPLÉMENTAIRES
+  ▸ &include_static=1
+       → Ajoute aussi les pages statiques (ex: /, /gift, /faq)
+  ▸ &manual_url=https://www.2dolistgo.com/gift
+       → Envoie **uniquement cette URL** manuellement à IndexNow
+         (indépendamment du sitemap)
+  ▸ &help=1
+       → Affiche cette aide
+
+EXEMPLES
+  ▸ /indexnow-multi.php?site=com&include_static=1&confirm=1
+  ▸ /indexnow-multi.php?site=com&manual_url=https://www.2dolistgo.com/gift
+───────────────────────────────
+HELP;
+  exit;
+}
 
 // --- CONFIG SITES ---
 $sites = [
@@ -55,6 +80,37 @@ if (empty($indexNowKey) || strpos($keyLocation, 'YOUR_COM_INDEXNOW_KEY') !== fal
   if ($site === 'com') {
     exit("Configure d'abord la clé IndexNow et le key file pour le .com.\n");
   }
+}
+
+// --- MODE MANUEL (envoi URL indépendante) ---
+if (isset($_GET['manual_url'])) {
+  $manualUrl = trim($_GET['manual_url']);
+
+  if (!filter_var($manualUrl, FILTER_VALIDATE_URL)) {
+    exit("URL manuelle invalide.\n");
+  }
+
+  echo "Mode manuel activé : envoi de l'URL $manualUrl\n";
+
+  $data = [
+    'host'        => parse_url($manualUrl, PHP_URL_HOST),
+    'key'         => $indexNowKey,
+    'keyLocation' => $keyLocation,
+    'urlList'     => [$manualUrl],
+  ];
+
+  $ch = curl_init('https://api.indexnow.org/indexnow');
+  curl_setopt($ch, CURLOPT_POST, true);
+  curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+  curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+  $response = curl_exec($ch);
+  $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+  curl_close($ch);
+
+  echo "\nRéponse IndexNow : $response\n";
+  exit; // on stoppe ici: pas de flux auto, pas de MAJ last_check
 }
 
 // --- RÉCUPÈRE ET PARSE LE SITEMAP ---
