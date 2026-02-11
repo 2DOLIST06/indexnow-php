@@ -76,7 +76,7 @@ $includeStatic = isset($_GET['include_static']);
 
 // --- VALIDATION SITE ---
 if (!isset($sites[$site])) {
-  exit("Site invalide. Utilise ?site=fr ou ?site=com\n");
+  exit("Site invalide. Utilise ?site=fr ou ?site=com ou ?site=com_ca\n");
 }
 
 $config       = $sites[$site];
