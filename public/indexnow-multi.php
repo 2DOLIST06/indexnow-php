@@ -57,6 +57,16 @@ $sites = [
       'https://www.2dolistgo.com/private-jet',
     ],
   ],
+  'com_ca' => [
+    'indexNowKey' => '23e4792a32114c79b29e35ad3f551060', // même clé que .com
+    'keyLocation' => 'https://www.2dolistgo.com/23e4792a32114c79b29e35ad3f551060.txt',
+    'sitemapUrl'  => 'https://www.2dolistgo.com/ca/sitemap.xml',
+    'staticPages' => [
+      'https://www.2dolistgo.com/ca/',
+      'https://www.2dolistgo.com/ca/flight-tickets',
+      'https://www.2dolistgo.com/ca/sitemap',
+    ],
+  ],
 ];
 
 // --- PARAMÈTRES URL ---
